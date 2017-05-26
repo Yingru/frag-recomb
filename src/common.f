@@ -68,8 +68,26 @@ c**********************************************************************c
 c**** HEAVY MESONS & PARTONS ******************************************c
 c**********************************************************************c
 
+c>>> modified by Yingru, May26,2017
+!
+!      integer HMNUM                      !  number of heavy mesons
+!      parameter (HMNUM=49)               !  that will be decayed
+!                                         !  (not counting antiparticles)
+!
+!      integer hmlist(HMNUM)              !  list with the PDG IDs of
+!                                         !  those mesons
+!      data    hmlist/ 
+c             D.......  D*.......... J/Psi  Psi'   Chi_C
+!     .        411, 421, 10411, 10421, 443, 100443, 10441,
+!     .        413,423,10413,10423,20413,20423,415,425,431,10431,433,
+!     .        10433,20433,435,
+c             B.......... B*............... Y   Chi_B Y'    Chi_B'
+!     .        511,521,531,10511,10521,10531,553,10551,10553,20553,
+!     .        513,523,10513,10523,20513,20523,515,525,533,10533,20533,
+!     .        535,541,10541,543,10543,20543,545/
+
       integer HMNUM                      !  number of heavy mesons
-      parameter (HMNUM=49)               !  that will be decayed
+      parameter (HMNUM=8)               !  that will be decayed
                                          !  (not counting antiparticles)
 
       integer hmlist(HMNUM)              !  list with the PDG IDs of
@@ -77,13 +95,10 @@ c**********************************************************************c
       data    hmlist/ 
 c             D.......  D*.......... J/Psi  Psi'   Chi_C
      .        411, 421, 10411, 10421, 443, 100443, 10441,
-     .        413,423,10413,10423,20413,20423,415,425,431,10431,433,
-     .        10433,20433,435,
-c             B.......... B*............... Y   Chi_B Y'    Chi_B'
-     .        511,521,531,10511,10521,10531,553,10551,10553,20553,
-     .        513,523,10513,10523,20513,20523,515,525,533,10533,20533,
-     .        535,541,10541,543,10543,20543,545/
-                   
+     .        413/                       ! force D*0 decay to D* and D0
+c<<< end of Yingru's modification
+
+
       integer PANUM                      !  number of partons that
       parameter (PANUM=2)                !  will be fragmented
                                          !  (not counting antiparticles)
