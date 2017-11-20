@@ -180,7 +180,8 @@ c      parameter (m_ud=0.3d0)
 c      parameter (m_s=0.475d0)
 c      parameter (prob_int_c=0.5d0)
 c      parameter (prob_int_b=1d0)
-      parameter (prob_num_MAX=41,diffTemp=35)
+!      parameter (prob_num_MAX=41,diffTemp=35)
+      parameter (prob_num_MAX=41, diffTemp=54)
 c      parameter (hadr_flag=1) ! 1: pure fragmentation
                               ! 2: pure recombination to D0 and D+
                               ! 3: frag. + recomb. 
