@@ -133,21 +133,21 @@ c pass the weight information to the daughter particles
          op_ipy(ipout)=p_ipy(ipin)
          op_ipz(ipout)=p_ipz(ipin)
 
-c         if(op_id(ipout).eq.11.or.op_id(ipout).eq.-11) 
-c     .       ipout=ipout+1
+         if(op_id(ipout).eq.11.or.op_id(ipout).eq.-11) 
+     .       ipout=ipout+1
 
-         if(abs(op_id(ipout)).eq.411.or.abs(op_id(ipout)).eq.421 
-     .    .or.abs(op_id(ipout)).eq.413.or.abs(op_id(ipout)).eq.423) then
-c     .    .or.abs(op_id(ipout)).eq.431.or.abs(op_id(ipout)).eq.433)
-            ipout=ipout+1
-            judge_HM=1
-         endif
+!         if(abs(op_id(ipout)).eq.411.or.abs(op_id(ipout)).eq.421 
+!     .    .or.abs(op_id(ipout)).eq.413.or.abs(op_id(ipout)).eq.423) then
+!c     .    .or.abs(op_id(ipout)).eq.431.or.abs(op_id(ipout)).eq.433)
+!            ipout=ipout+1
+!            judge_HM=1
+!         endif
 
-         if(abs(op_id(ipout)).eq.511.or.abs(op_id(ipout)).eq.521
-     .    .or.abs(op_id(ipout)).eq.513.or.abs(op_id(ipout)).eq.523) then
-            ipout=ipout+1
-            judge_HM=1
-         endif
+!         if(abs(op_id(ipout)).eq.511.or.abs(op_id(ipout)).eq.521
+!     .    .or.abs(op_id(ipout)).eq.513.or.abs(op_id(ipout)).eq.523) then
+!            ipout=ipout+1
+!            judge_HM=1
+!         endif
 
   55  continue
 

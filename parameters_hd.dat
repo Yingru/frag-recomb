@@ -5,7 +5,7 @@ hadr_flag.    3       ! 1 - pure fragmentation
                       ! 2 - pure recombination to D0 and D+
                       ! 3 - frag. + recomb. (including Ds not yet)
 HQid......    4       ! Heavy quark flavor: 4-charm; 5-beauty.
-HMDecay...    0       ! 0 - HQ won't decay; 1 - Decay (Set to 0 at this moment)
+HMDecay...    1       ! 0 - HQ won't decay; 1 - Decay (Set to 0 at this moment)
 #
 # Parameters of the recomb. probability table 
 prob_num..    41       ! Total number of points (Check maximum value allowed)
