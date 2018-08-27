@@ -28,5 +28,5 @@ add_subdirectory (src)
 
 # install dependencies
 #install (FILES parameters_hd.dat recomb_c_tot.dat recomb_b_tot.dat recomb_c_BR1.dat recomb_b_BR1.dat DESTINATION ${PROJECT_NAME})
-install (FILES parameters_hd.dat recomb_c_tot.dat recomb_b_tot.dat recomb_c_BR1.dat recomb_b_BR1.dat DESTINATION bin)
-
+install (FILES recomb_c_tot.dat recomb_b_tot.dat recomb_c_BR1.dat recomb_b_BR1.dat DESTINATION results)
+install (FILES parameters_hd.dat DESTINATION results)
